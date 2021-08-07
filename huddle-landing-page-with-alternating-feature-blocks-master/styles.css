@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+body {
+    background-color: var(--Very-Pale-Cyan);
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 160%;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    padding: 1% 3% 1% 3%;
+}
+
+header nav>img {
+    margin-top: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+header .dicription .dis>img {
+    width: 90%;
+    height: auto;
+}
+
+header nav button {
+    margin-bottom: 2%;
+    border-radius: 50px;
+    border: none;
+    color: wheat;
+    color: black;
+}
+
+header nav button:hover {
+    color: grey;
+}
+
+header .dicription .ilustrative>img {
+    width: 100%;
+}
+
+header .dicription button {
+    margin-top: 5%;
+    margin-left: 10%;
+    padding: 3% 10% 3% 10%;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--Pink);
+    color: white;
+}
+
+header .dicription button:hover {
+    background-color: #FF67E7;
+}
+
+.imge img {
+    width: 100%;
+}
+
+.mainbody p {
+    margin-top: 4%;
+    font-size: 95%;
+}
+
+.footbox {
+    padding-bottom: 3%;
+    color: white;
+    font-weight: lighter;
+}
+
+.footbox .contact .huddlef {
+    padding-left: 5%;
+}
+
+.footbox .contact .huddlef>img {
+    filter: brightness(0) invert(1);
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contact .huddlef li {
+    margin-bottom: 2%;
+}
+
+.first {
+    list-style: url(/images/icon-location.svg)
+}
+
+.second {
+    list-style: url(/images/icon-phone.svg);
+}
+
+.third {
+    list-style: url(/images/icon-email.svg);
+}
+
+main .comun .comunity>h2 {
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+main .comun .comunity button {
+    padding: 2% 4% 2% 4%;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--Pink);
+}
+
+main .comun .comunity button:hover {
+    background-color: #FB7AFC;
+}
+
+main .footbox {
+    background-color: var(--Very-Dark-Cyan);
+    width: 98vw;
+}
+
+.footbox .social a {
+    padding: 1% 1.5% 1% 1.5%;
+    border: 2px solid white;
+    border-radius: 50px;
+    filter: brightness(0) invert(1);
+}
+
+.footbox .social a:hover {
+    filter: invert(58%) sepia(46%) saturate(1598%) hue-rotate(252deg) brightness(111%) contrast(97%);
+}
+
+.copyright {
+    color: white;
+}
+
+@media (min-width:769px) {
+    header {
+        background-image: url(/images/bg-hero-desktop.svg);
+        background-repeat: no-repeat;
+        margin-bottom: 5%;
+    }
+    header .dicription {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    header .dicription .dis {
+        margin-top: 5%;
+        padding-top: 10%;
+        padding-right: 10%;
+    }
+    header .dicription .dis>h1 {
+        width: 90%;
+        margin-bottom: 2%;
+    }
+    header .dicription .dis>p {
+        line-height: 1.5;
+    }
+    header nav button {
+        margin-left: 87%;
+        padding: 1% 3% 1% 3%;
+        display: inline;
+        transform: translateY(-100%);
+    }
+    main .mainbody {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 1% 6% 1% 6%;
+        row-gap: 5%;
+        margin-bottom: 20%;
+    }
+    main .mainbody .grow {
+        margin-top: 20%;
+        padding-right: 20%;
+        line-height: 1.5;
+    }
+    .mainbody .follow {
+        padding-left: 20%;
+    }
+    .mainbody .user {
+        padding-right: 20%;
+    }
+    .mainbody .img-user {
+        margin-bottom: 1%;
+    }
+    main .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        z-index: 0;
+    }
+    main .comun {
+        display: block;
+        position: relative;
+    }
+    main .comun .comunity {
+        justify-content: center;
+        background-color: white;
+        width: 40%;
+        margin-left: 25%;
+        padding: 2% 3% 2% 3%;
+        margin-bottom: -2%;
+        border-radius: 5px;
+    }
+    .footbox {
+        padding-top: 2%;
+    }
+    .footbox .contact_us {
+        margin-top: 20%;
+        display: flex;
+        margin-left: 10%;
+    }
+    .footbox .contact_us .we {
+        margin-left: 5%;
+    }
+    .contact .huddlef ul {
+        font-size: 90%;
+        margin-left: 5%;
+    }
+    main .comun .comunity button {
+        margin-left: 25%;
+    }
+    .footbox .social {
+        margin-top: 20%;
+    }
+    .footbox .social .copyright {
+        margin-top: 20%;
+        font-size: 70%;
+        word-spacing: 2%;
+    }
+}
+
+@media (max-width:769px) {
+    body {
+        width: 100vw;
+        height: auto;
+    }
+    header {
+        background-image: url(/images/bg-hero-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    header .dicription .dis {
+        margin-bottom: 8vh;
+    }
+    main .info {
+        margin-top: 10%;
+        padding: 2% 10% 2% 10%;
+        text-align: center;
+    }
+    main .info p {
+        font-size: 110%;
+    }
+    .mainbody {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .mainbody .grow {
+        grid-row: 2/3;
+    }
+    .mainbody .img_grow {
+        grid-row: 1/2;
+    }
+    .mainbody .img_foll0w {
+        grid-row: 3/4;
+    }
+    .mainbody .follow {
+        grid-row: 4/5;
+    }
+    .mainbody .img_user {
+        grid-row: 5/6;
+    }
+    .mainbody .user {
+        grid-row: 6/7;
+    }
+    header .dicription {
+        text-align: center;
+    }
+    header .dicription button {
+        margin-left: -2%;
+    }
+    header nav img {
+        width: 25%;
+    }
+    header nav button {
+        padding: 1% 2% 1% 2%;
+        width: 20%;
+        margin-left: 50%;
+    }
+    .footbox .contact_us {
+        margin-top: 5%;
+    }
+    .footbox {
+        margin-top: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+    .footbox .contact {
+        padding-left: 2%;
+    }
+    .footbox .social .social_media {
+        margin-top: 5%;
+        margin-left: 40%;
+    }
+    .footbox .copyright {
+        margin-top: 2%;
+        width: 90%;
+        margin-left: 20%;
+    }
+    main .comun {
+        height: 10vh;
+        padding: 1% 4% 3% 4%;
+        position: relative;
+    }
+    main .comun .comunity {
+        margin-left: 7%;
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        transform: translateY(10%);
+        background-color: white;
+        padding: 1% 1%;
+    }
+    main .comun .comunity>h2 {
+        font-size: 5vw;
+    }
+    main .comn .comunity button {
+        margin-left: 20%;
+    }
+}
